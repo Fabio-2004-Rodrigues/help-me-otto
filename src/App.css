@@ -329,12 +329,13 @@ body {
     border-radius: 0 20px 20px 0;
     transition: transform 0.3s, left 0.3s;
     transform: translateX(-100%);
-    display: flex !important;
     flex-direction: column;
+    display: none !important; /* <-- sidebar some por padrão */
   }
   .sidebar.sidebar-open {
     transform: translateX(0);
     left: 0 !important;
+    display: flex !important; /* <-- só aparece quando aberta */
   }
   .sidebar-hamburger {
     display: block !important;
